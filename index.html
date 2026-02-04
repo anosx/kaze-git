@@ -3,16 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Card Design</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* body {
+            background: #eef3f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        } */
+
+        .card {
+            width: 420px;
+            background: #fff;
+            border-radius: 18px;
+            padding: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 12px;
+            margin: 14px 0;
+            padding-left: 6px;
+        }
+
+        .tags li {
+            list-style: none;
+            padding: 6px 14px;
+            font-size: 14px;
+            border: 1px solid #cfd8dc;
+            border-radius: 20px;
+            color: #607d8b;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            margin: 10px 6px;
+            color: #263238;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #78909c;
+            line-height: 1.5;
+            margin: 0 6px 20px;
+        }
+
+        .btn {
+            display: block;
+            width: fit-content;
+            margin: 0 auto 10px;
+            padding: 10px 24px;
+            background: #d6ecff;
+            color: #2196f3;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #c0e0ff;
+        }
+    </style>
 </head>
+
 <body>
-    <script src="script.js"></script>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, nulla!</p>
-    <button>submit</button>
-    <img style="width: 40vw;" src="https://images.unsplash.com/photo-1769317996569-0a23b3f426f7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+    <div class="card">
+        <!-- 🔽 Replace image src with YOUR image -->
+        <img src="https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg" alt="Lake">
+
+        <ul class="tags">
+            <li>Nature</li>
+            <li>Lake</li>
+        </ul>
+
+        <h2>Lake and Nature</h2>
+
+        <p>
+            This is a card containing an image of a lake in nature. It looks
+            very beautiful, serene, and peaceful.
+        </p>
+
+        <a href="#" class="btn">Read More</a>
+    </div>
     
 </body>
 </html>
